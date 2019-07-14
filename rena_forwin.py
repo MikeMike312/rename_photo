@@ -1,56 +1,63 @@
-#! \Users\user\
+#! \Users\user\~ ANY DIRECTORY
 # -*- coding: utf-8 -*
 
 import os, os.path
 import tkinter as tk
-
 #push button
 def rena():
+    temp = 0
     files = os.listdir(".")
     files.sort(key=os.path.getmtime,reverse=False)
     for i,name in enumerate(files):
         if name.endswith("jpg"):
+            temp = temp +1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".jpg")
         if name.endswith("jpeg"):
+            temp = temp + 1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".jpeg")
         if name.endswith("JPG"):
+            temp = temp + 1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".JPG")
         if name.endswith("JPEG"):
+            temp = temp + 1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".JPEG")
         if name.endswith("png"):
+            temp = temp + 1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".png")
         if name.endswith("PNG"):
+            temp = temp + 1
             p = textPre.get()
-            d = str(i)
+            d = str(temp)
             n = int(textDigit.get())
             d_zero = d.zfill(n)
             e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".PNG")
+
 #window
 win = tk.Tk()
 win.title("Rename!")

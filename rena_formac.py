@@ -1,4 +1,4 @@
-#! \Users\user\
+#! \Users\user\~ ANY DIRECTRY
 # -*- coding: utf-8 -*
 import sys
 import os, os.path
@@ -8,19 +8,22 @@ p = input('Enter your name[3 digit](Ex. MZK): ')
 n = int(input('Enter Digit (Ex. 3): '))
 e = input('Enter Event Name(Party 20190501): ')
 
+'''
 def resource_path(relative):
     if hasattr(sys, "_MEIPASS"):
         return os.path.join(sys._MEIPASS, relative)
     return os.path.join(relative)
-
+'''
 #push button
 def rena():
-    di = resource_path(".")
-    files = os.listdir(di)
-    #files = os.listdir(".")
+    temp = 0
+    #di = resource_path(".")
+    #files = os.listdir(di)
+    files = os.listdir(".")
     files.sort(key=os.path.getmtime,reverse=False)
     for i,name in enumerate(files):
         if name.endswith("jpg"):
+            temp = temp + 1
             #p = textPre.get()
             d = str(i)
             #n = int(textDigit.get())
@@ -28,6 +31,7 @@ def rena():
             #e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".jpg")
         if name.endswith("JPG"):
+            temp = temp + 1
             #p = textPre.get()
             d = str(i)
             #n = int(textDigit.get())
@@ -35,6 +39,7 @@ def rena():
             #e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".JPG")
         if name.endswith("JPEG"):
+            temp = temp + 1
             #p = textPre.get()
             d = str(i)
             #n = int(textDigit.get())
@@ -42,6 +47,7 @@ def rena():
             #e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".JPEG")
         if name.endswith("jpeg"):
+            temp = temp + 1
             #p = textPre.get()
             d = str(i)
             #n = int(textDigit.get())
@@ -49,13 +55,13 @@ def rena():
             #e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".jpeg")
         if name.endswith("png"):
+            temp = temp + 1
             #p = textPre.get()
             d = str(i)
             #n = int(textDigit.get())
             d_zero = d.zfill(n)
             #e = textEve.get()
             os.rename(name,p+d_zero+"_"+e+".png")
-
 rena()
 '''
 #window
