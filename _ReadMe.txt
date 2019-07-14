@@ -1,12 +1,14 @@
 ##################################################################
+
 　　　　　　　　撮影部向けのリネームソフトです。
 
 　　各ファイルの実行ディレクトリ（フォルダ）における
 　「.jpg」「.JPG」「.jpeg」「.JPEG」「.png」「.PNG」拡張子の
 　ファイルのみを情報を付与して更新日時順に採番します。
+
 ##################################################################
 
-　＜設定パラメータについて＞
+＜設定パラメータについて＞
 　
 　＊Name    : ご自身のお名前のイニシャルを3桁で入力してください。
 　　　　　　　（例、MZK　など）
@@ -15,29 +17,30 @@
 　＊Eve Name: イベント名を任意で入力してください
 
 
-　＜各ファイルの補足と推奨環境について＞
+＜各ファイルの補足と推奨環境について＞
 
-rena_forwin.exe	1.00ver
-　: Windowsユーザ向けGUI。
-　　該当フォルダにコピーし、ダブルクリックで実行してください。
-　　推奨環境→WindowsPCであればおそらくなし。
+　rena_forwin.exe	1.00ver
+　　: Windowsユーザ向けGUI。
+　　　該当フォルダにコピーし、ダブルクリックで実行してください。
+　　　推奨環境→WindowsPCであればおそらくなし。
 
-rena_forwin.py	1.00ver
-　: Windowsユーザ向けGUI。
-　　該当フォルダにコピーしたうえで CommandPrompt か PowerShell 
-    を開き「Python rena_forwin.py」を実行してください。
-　推奨環境→WindowsPC　かつ　Pythonの実行環境が必要です。
-　使用ライブラリ　os, ktinter(tcl-tk)
-　　　　　→osのみ標準ライブラリ、ktinterは要インストール
+　rena_forwin.py	1.00ver
+　　: Windowsユーザ向けGUI。
+　　　該当フォルダにコピーしたうえで CommandPrompt か PowerShell 
+    　を開き「Python rena_forwin.py」を実行してください。
+　　推奨環境→WindowsPC　かつ　Pythonの実行環境が必要です。
+　　使用ライブラリ　os, ktinter(tcl-tk)
+　　　　　　　　　→osのみ標準ライブラリ、ktinterは要インストール
 
-rena_formac.py	1.00ver
-　: Macユーザ向けCUI。
-　　該当フォルダにコピーしたうえで Terminal を開き、
-　　「Python rena_formac.py」を実行してください。
-　推奨環境→WindowsPC　かつ　Pythonの実行環境が必要です。
-  使用ライブラリ　sys, os 　
-　　　　　→全てPython導入時の標準ライブラリ
-　　※GUI作れなくて諦めました。すみません。。
+　rena_formac.py	1.00ver
+　　: Macユーザ向けCUI。
+　　　該当フォルダにコピーしたうえで Terminal を開き、
+　　　「Python rena_formac.py」を実行してください。
+　　　推奨環境→Mac OS　かつ　Pythonの実行環境が必要です。
+  　　使用ライブラリ　sys, os 　
+　　　　　　　→全てPython導入時の標準ライブラリのためおそらく
+　　　　　　　　大丈夫。。
+　　※Mac向けGUIの.appはうまくいかず諦めました。すみません。。
 
 
 ##################################################################
